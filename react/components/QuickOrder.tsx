@@ -4,6 +4,7 @@ import UPDATE_CART from '../graphql/updateCart.graphql'
 import GET_PRODUCT from '../graphql/getProductBySku.graphql'
 import { generateBlockClass } from "@vtex/css-handles";
 import styles from './styles.css'
+import imgCR from '../../assets/comprarapida.gif'
 
 const QuickOrder = ({ blockCLass }: { blockCLass: string }) => {
 
@@ -68,6 +69,7 @@ const QuickOrder = ({ blockCLass }: { blockCLass: string }) => {
   }
   return <div className={container}>
     <h2 className={title}>Compra rápida en Dafiti</h2>
+    <img src={imgCR} alt="gif quick order" width="100" height="100" />
     <form onSubmit={searchProduct} className={form}>
       <div>
         <label htmlFor="sku" className={labelName}>Ingrese el número de SKU</label>
